@@ -4,11 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node server/index.js",
-    "develop": "concurrently \"cd server && node index.js\" \"cd client && npm start\"",
-    "install": "cd server && npm i && cd ../client && npm i",
-    "seed": "cd server && npm run seed",
-    "build": "cd client && npm run build"
+    "start": "concurrently \"cd server && node index.js\" \"cd react-ui && npm start\""
   },
   "repository": {
     "type": "git",
