@@ -1,0 +1,26 @@
+{
+  "name": "chat-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "develop": "concurrently \"cd server && node index.js\" \"cd client && npm start\"",
+    "install": "cd server && npm i && cd ../client && npm i",
+    "seed": "cd server && npm run seed",
+    "build": "cd client && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dominick-Simone/Chat-App.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dominick-Simone/Chat-App/issues"
+  },
+  "homepage": "https://github.com/Dominick-Simone/Chat-App#readme",
+  "dependencies": {
+    "concurrently": "^6.4.0"
+  }
+}
