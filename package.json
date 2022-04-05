@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "concurrently \"cd server && node index.js\" \"cd react-ui && npm start\""
+    "start": "concurrently \"cd server && node index.js\" \"cd react-ui && npm start\"",
+    "i": "concurrently \"cd server && npm i\" \"cd react-ui && npm i\"",
+    "install": "concurrently \"cd server && npm i\" \"npm i\" \"cd react-ui && npm i\""
   },
   "repository": {
     "type": "git",
